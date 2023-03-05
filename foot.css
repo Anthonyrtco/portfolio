@@ -1,0 +1,93 @@
+/*PARTIE FOOTER*/  
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top : 1px double rgb(78, 77, 77);
+
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: rgb(109, 106, 106);
+
+    height: 100px;
+    position: fixed absolute ;   
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+}
+
+
+
+.reseau{
+    display: flex;
+    flex-direction:row;
+    order:3;
+    border-left: 1px double rgb(131, 123, 123);
+    background: rgb(17, 17, 17);
+
+}
+
+.credit {
+    order:2;
+    border-left: 1px double rgb(131, 123, 123);
+    background: rgb(29, 30, 30);
+
+    
+}
+
+.partenaires {
+   
+    order:1; 
+    background: rgb(17, 17, 17);
+} 
+
+
+.reseau,
+.credit,
+.partenaires{
+    width: 34%;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+
+.insta img,
+.linkedin img{
+   height: 3em;
+   width: auto;
+   padding: 1em;
+}
+
+@media only screen and (max-width: 815px ){ 
+    .foot{
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+.reseau{
+    width: 815px;
+    border-left: none;
+
+
+}
+
+.credit {
+    width: 815px;
+    border-left: none;
+
+
+}
+
+.partenaires {
+    width: 815px;
+
+
+}
+
+}
