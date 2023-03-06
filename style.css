@@ -88,12 +88,13 @@ a{
     display: flex;
     flex-direction: row;   
     justify-content: center;
+    flex-wrap: wrap;
+
 
     height: 500px;
     padding-bottom: 200px;
 
     align-items: center;
-    flex-wrap: wrap;
     gap: 1em;
     position: relative;
     bottom: 3em;
@@ -122,13 +123,24 @@ img {
     padding-bottom: 100px;
     height: 400px;
     width: 400px;
+
     
+}
+.photo-c img,
+.photo-nb img,
+.photo-v img{
+box-shadow: 0 0 5px rgb(255, 255, 255, 0.3);
 }
 
 
+
+
+                                                /*PARTIE RESPONSIVE*/
+
 @media only screen and (max-width: 1239px ){
     .photo {
-        height: 1000px;
+        height: 1100px;
+
     }
 
     .photo-v{
@@ -145,7 +157,8 @@ img {
 }
 @media only screen and (max-width: 815px ){
     .photo {
-        height: 1500px;
+        height: 1600px;
+
     }
     .nav a{
         font-size: 1em;
@@ -175,7 +188,7 @@ img {
     }
 }
 
-
+                                     /*FIN PARTIE RESPONSIVE*/
 
 /*PARTIE VIDÉO*/ 
 
@@ -222,6 +235,7 @@ img {
     height: 600px;
     width: auto;
     border-radius: 2em;
+    box-shadow: 0 0 5px rgb(255, 255, 255, 0.8);
 
 }
 
