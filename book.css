@@ -5,7 +5,7 @@
     margin: 30px auto;
     padding: 0;
     position: relative;
-    top: -7em;
+    top: -4em;
 }
 
 .slider-viewport {
@@ -62,4 +62,30 @@
 #photo-v-b:target .slider-content{
     -webkit-transform: translateX(-1000px);
     transform: translateX(-1000px);
+}
+
+@media only screen and (max-width: 500px){
+    .slider,
+    .slider-viewport {
+     width: 400px;
+    } 
+
+    .slider-content img{
+        width: 400px;
+    }
+
+    .slider-viewport{
+        overflow: hidden;
+    }
+
+    #photo-nb-b:target .slider-content {
+        -webkit-transform: translateX(-400px);
+        transform: translateX(-400px);
+    }
+    
+    #photo-v-b:target .slider-content{
+        -webkit-transform: translateX(-800px);
+        transform: translateX(-800px);
+    }
+    
 }
