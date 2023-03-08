@@ -16,6 +16,6 @@ app.get ('/', (req, res)=> {
 })
 
 app.listen(PORT, () =>{
-    console.log (`serveur démarré : file:///Users/anthonyrictio/Desktop/portfolio/pages/index.html:${PORT}`)
+    console.log (`serveur démarré : https://anthonyrtco.github.io/Portfolio-projet:${PORT}`)
 })
 
