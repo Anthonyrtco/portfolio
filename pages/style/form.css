@@ -1,0 +1,42 @@
+/*PARTIE FORMULAIRE DANS CONTACT.HTML*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 650px;
+    gap: 1em;
+    position: relative;
+    bottom: 4em;
+    left: 4em;
+
+}
+
+input {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 1.5em;
+}
+
+textarea {
+    border-radius: 0.5em ;
+}
+
+
+#message {
+    width: 500px;
+    height: 100px;
+}
+
+#envoyer {
+    transition: 0.5s;
+    width: 200px;
+    position: relative;
+    left: 23em;
+}
+
+#envoyer:hover {
+    background-color: rgb(42, 118, 118);
+    box-shadow: 0 0 0.5em white;
+    color: white;
+}
